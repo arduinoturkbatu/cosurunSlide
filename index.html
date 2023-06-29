@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetica Ürünleri (Presentation)</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <style>
+        body {margin:0;padding:0;box-sizing: border-box;}
+        .swiper {width: 100%;height: 100vh;background:#eee}
+        .swiper-slide {background: #fff;box-shadow:0 0 20px 0 rgb(0 0 0 / 20%);display: flex;justify-content: center;align-items: center;background:#ee0676}
+        .swiper-slide iframe {width: 100%;height:100%;}
+        .swiper-slide img {height:100%;}
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="Frame 2.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/hindistancevizi/" frameborder="0"></iframe>
+          </div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/argan/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/asetonnarcicegi/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/vazelin/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/gulsuyu/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/sarikantaron/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/tatlibadem/" frameborder="0"></iframe></div>
+          <div class="swiper-slide"><iframe src="https://arduinoturkbatu.github.io/cosmeticayaglar/avokado/" frameborder="0"></iframe></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: 1.5,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      effect: "coverflow",
+
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+</body>
+</html>
